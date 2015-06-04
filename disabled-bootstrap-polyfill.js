@@ -2,6 +2,7 @@
   if(navigator.appName == 'Microsoft Internet Explorer'){
     var agent = navigator.userAgent;
     var mouseover = function(e){
+      $(this).unbind('mouseover');
       if ($(this).attr('disabled')){
         return;
       }
@@ -9,7 +10,6 @@
         $(this).attr('disabled', true);
         $(this).data('disabledByPolyfill', true)
       }
-      $(this).unbind('mouseover');
     };
           
     var mouseleave = function(e){
