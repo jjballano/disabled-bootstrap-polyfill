@@ -11,5 +11,5 @@ Now, this depends on jQuery. I'll change it.
 Include disabled-bootstrap-polyfill.js in your html and add:
 
 	$(document).ready(function(){
-      disableElementsPolyfill({});
+      disableElementsPolyfill();
     });
